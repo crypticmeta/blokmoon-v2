@@ -24,7 +24,7 @@ function Testimonials() {
       <Slider {...settings}>
            <div className="flex px-6 justify-center">
            <div className=" bg-red-500  flex justify-center  ">
-            <div className=" p-7 py-12 bg-black border border-red-500">
+            <div className=" p-12 bg-black border border-red-500">
             <div className=" flex justify-center items-center">
             <img className="" src="/assets/images/testi1.jpg"/>
            </div>
