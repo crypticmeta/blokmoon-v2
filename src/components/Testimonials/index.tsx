@@ -19,7 +19,7 @@ function Testimonials() {
           <span className="text-[8rem] leading-tight absolute top-[-35px] left-[-84px]">T</span>estimonials
         </h3>
       </div>
-      <div className="pt-20 lg:px-32  w-10/12 md:w-9/12">
+      <div className="pt-20 lg:px-32  lg:w-10/12 md:w-9/12">
       <div className="">
       <Slider {...settings}>
            <div className="flex px-6 justify-center">
