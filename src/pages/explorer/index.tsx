@@ -3,6 +3,7 @@ import axios from 'axios'
 import Image from "next/image"
 import Link from "next/link"
 import Input from "../../components/Input"
+import Head from "next/head"
 function Explorer() {
     const [data, setData] = useState([]);
     const fetchRecent = useCallback(
@@ -21,11 +22,28 @@ function Explorer() {
         fetchRecent();
     }, [])
     
-    console.log(data, 'DATA')
     
   return (
     <div className="custom-container  text-white">
-      <Input/>
+      <Head>
+        <title>Blokmoon BTC NFT Explorer</title>
+        <meta
+          name="description"
+          content="Blokmoon BTC NFT explorer aims to help you search details related to your NFTs easily and in a readable format."
+        />
+        <meta property="og:image" content="/assets/images/screen.png" />
+
+        {/* <!-- Twitter cards --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@blokmoon2021" />
+        <meta name="twitter:title" content="Blokmoon | Web3 Agency" />
+        <meta
+          name="twitter:description"
+          content="Blokmoon BTC NFT explorer aims to help you search details related to your NFTs easily and in a readable format."
+        />
+        <meta name="twitter:image" content="/assets/images/screen.png" />
+      </Head>
+      <Input />
       <div className="flex justify-between items-center flex-wrap">
         {data.map((item, idx) => {
           if (idx < 31) return <Card item={item} key={item.guid} />;
