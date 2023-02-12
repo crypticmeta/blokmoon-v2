@@ -10,7 +10,7 @@ require('@solana/wallet-adapter-react-ui/styles.css');
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/globals.css";
-
+import Navbar from "../components/Navbar"
 const App: FC<AppProps> = ({ Component, pageProps }) => {
     return (
       <div className="relative">
@@ -33,6 +33,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
         </Head>
         <ContextProvider>
           <div className="relative z-[1]">
+            <Navbar/>
             <Notifications />
             <Component {...pageProps} />
           </div>
