@@ -19,7 +19,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           className="fixed top-0 bottom-0 right-0 left-0"
         >
           <img
-            style={{ width: "100%", height: "100%", objectFit:"cover" }}
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
             src="/assets/images/Services.png"
             alt="bg"
           />
@@ -28,12 +28,23 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           <title>Blokmoon</title>
           <meta
             name="description"
-            content="BlokMoon is a website development design team with over 20 years experience in web development. We offer high-quality, inclusive and low-cost website development services and works with all kinds of businesses around the world to help you get your idea online."
+            content="BlokMoon is a website development design team with over 10 years experience in web development. We offer high-quality, inclusive and low-cost website development services and works with all kinds of businesses around the world to help you get your idea online."
           />
+          <meta property="og:image" content="/assets/images/screen.png" />
+
+          {/* <!-- Twitter cards --> */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@blokmoon2021" />
+          <meta name="twitter:title" content="Blokmoon | Web3 Agency" />
+          <meta
+            name="twitter:description"
+            content="BlokMoon is a website development design team with over 10 years experience in web development. We offer high-quality, inclusive and low-cost website development services and works with all kinds of businesses around the world to help you get your idea online."
+          />
+          <meta name="twitter:image" content="/assets/images/screen.png" />
         </Head>
         <ContextProvider>
           <div className="relative z-[1]">
-            <Navbar/>
+            <Navbar />
             <Notifications />
             <Component {...pageProps} />
           </div>
