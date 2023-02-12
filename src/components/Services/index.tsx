@@ -51,12 +51,12 @@ function Services() {
           <div className="w-full md:w-6/12 p-3 h-[500px] 2xl:h-[1000px] center">
             <div className="border-4 rounded-[30px] h-[100%] border-brand_blue p-3  services-gradient relative overflow-hidden">
               <Website />
-              <div className="absolute bottom-0 left-0 right-0 h-[30%]">
+              <div className="absolute bottom-0 left-0 right-0 h-[35%]">
                 <div className="relative h-full w-full">
                   <div className="absolute min-w-full min-h-full scale-110 bg-brand_red rounded-tl-[50px]  rounded-tr-[100px] rotate-[5deg]"></div>
                   <div className="absolute min-w-full min-h-full bg-brand_blue pb-2 rounded-tl-[50px]  rounded-tr-[100px] flex flex-col justify-end pl-4">
-                    <p className="text-xs pr-6 pb-3">
-                      We can create pixel perfect websites that are safe, secure, fast and responsiveness. Our websites work well on all standard devices and help you convey your idea properly.
+                    <p className="text-xs pr-6 pb-3 font-thin">
+                      We can create pixel perfect websites that are secure, fast and responsiveness. Our websites works well on all standard devices and help you convey your idea properly.
                     </p>
                     <p className="font-bold tracking-wide">WEBSITE</p>
                   </div>
@@ -67,11 +67,11 @@ function Services() {
           <div className="w-full md:w-6/12 p-3 h-[500px] 2xl:h-[1000px] center">
             <div className="border-4 rounded-[30px] h-[100%] border-brand_blue p-3  services-gradient relative overflow-hidden">
               <Mint />
-              <div className="absolute bottom-0 left-0 right-0 h-[30%]">
+              <div className="absolute bottom-0 left-0 right-0 h-[35%]">
                 <div className="relative h-full w-full">
                   <div className="absolute min-w-full min-h-full scale-110 bg-brand_red rounded-tl-[50px]  rounded-tr-[100px] rotate-[5deg]"></div>
                   <div className="absolute min-w-full min-h-full bg-brand_blue pb-2 rounded-tl-[50px]  rounded-tr-[100px] flex flex-col justify-end pl-4">
-                    <p className="text-xs pr-6 pb-3">
+                    <p className="text-xs pr-6 pb-3 font-thin">
                       We create websites and webpages for projects to enable
                       their users to mint NFTs. We have a lot of experience in
                       using various methods of NFT launch.{" "}
@@ -85,11 +85,11 @@ function Services() {
           <div className="w-full md:w-6/12 p-3 h-[500px] 2xl:h-[1000px] center">
             <div className="border-4 rounded-[30px] h-[100%] border-brand_blue p-3  services-gradient relative overflow-hidden">
               <NFT />
-              <div className="absolute bottom-0 left-0 right-0 h-[30%]">
+              <div className="absolute bottom-0 left-0 right-0 h-[35%]">
                 <div className="relative h-full w-full">
                   <div className="absolute min-w-full min-h-full scale-110 bg-brand_red rounded-tl-[50px]  rounded-tr-[100px] rotate-[5deg]"></div>
                   <div className="absolute min-w-full min-h-full bg-brand_blue pb-2 rounded-tl-[50px]  rounded-tr-[100px] flex flex-col justify-end pl-4">
-                    <p className="text-xs pr-6 pb-3">
+                    <p className="text-xs pr-6 pb-3 font-thin">
                       We can help you generate thousands of NFTs along with the
                       metadata depending on the layers you provide to us.
                     </p>
