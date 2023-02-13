@@ -11,7 +11,7 @@ background: rgb(6,46,57);
 background: radial-gradient(circle, rgba(6,46,57,1) 0%, rgba(2,0,36,1) 100%);
 }
 .custom-container{
-  @apply p-6 lg:px-24 2xl:px-36;
+  @apply p-6  lg:px-24 2xl:px-36;
 }
 .gradient{
   background: hsla(350, 69%, 50%, 1);

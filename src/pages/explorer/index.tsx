@@ -44,7 +44,7 @@ function Explorer() {
         <meta name="twitter:image" content="/assets/images/screen.png" />
       </Head>
       <Input />
-      <div className="flex justify-between items-center flex-wrap">
+      <div className="flex justify-center lg:justify-between items-center flex-wrap">
         {data.map((item, idx) => {
           if (idx < 31) return <Card item={item} key={item.guid} />;
         })}
