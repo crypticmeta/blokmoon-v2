@@ -129,7 +129,7 @@ function Testimonials() {
              height="130"
              filterUnits="userSpaceOnUse"
            >
-             <feOffset dy="12" input="SourceAlpha" />
+             <feOffset dy="12" in="SourceAlpha" />
              <feGaussianBlur stdDeviation="15" result="blur" />
              <feFlood floodColor="#d82744" floodOpacity="0.502" />
              <feComposite operator="in" in2="blur" />
@@ -187,7 +187,7 @@ function Testimonials() {
              height="130"
              filterUnits="userSpaceOnUse"
            >
-             <feOffset dy="12" input="SourceAlpha" />
+             <feOffset dy="12" in="SourceAlpha" />
              <feGaussianBlur stdDeviation="15" result="blur" />
              <feFlood floodColor="#d82744" floodOpacity="0.502" />
              <feComposite operator="in" in2="blur" />

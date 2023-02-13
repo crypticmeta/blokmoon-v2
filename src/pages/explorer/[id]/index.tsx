@@ -41,6 +41,7 @@ function Id() {
           <div className="w-full lg:w-4/12    flex justify-center lg:justify-start lg:px-2 md:px-3">
             <div className=" h-[350px] w-[350px]  md:h-[300px] md:w-[300px] services-gradient border-4 border-brand_red overflow-hidden relative">
               <Image
+                unoptimized
                 onError={() => setImg(false)}
                 className={`overflow-hidden object-cover ${!img && "hidden"}`}
                 fill

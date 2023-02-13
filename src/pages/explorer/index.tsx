@@ -59,6 +59,7 @@ const Card = ({ item }) => {
         <div className=" services-gradient h-full w-full shadow-xl rounded-2xl">
           <div className="h-[280px] overflow-hidden relative">
             <Image
+              unoptimized
               className={`overflow-hidden object-cover ${!show && "hidden"}`}
               fill
               placeholder={"blur"}
