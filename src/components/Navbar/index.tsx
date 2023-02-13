@@ -66,10 +66,10 @@ function Navbar() {
             <div className="flex text-white items-center space-x-8 p-6 ">
               <p className=" text-2xl md:text-3xl font-extrabold">Blokmoon</p>
               <div className="flex space-x-4 text-2xl md:text-3xl ">
-                <Link  onClick={() => setOpen(false)} target="#" href="https://twitter.com/OtterLabsNFT">
+                <Link  onClick={() => setOpen(false)} target="#" href="">
                   <BsTwitter />
                 </Link>
-                <Link  onClick={() => setOpen(false)} target="#" href="https://discord.gg/NMNYAdXgvD">
+                <Link  onClick={() => setOpen(false)} target="#" href="">
                   {" "}
                   <FaDiscord />{" "}
                 </Link>
