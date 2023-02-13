@@ -16,6 +16,7 @@ type Data = {
 };
 function Id() {
   const router = useRouter();
+  const [img, setImg] = useState(true)
   const [data, setData] = useState<Data | null>(null);
   const fetchData = useCallback(async () => {
     await axios
@@ -36,11 +37,12 @@ function Id() {
     return (
       <div className="custom-container   h-screen">
         <Input />
-        <div className="flex h-70vh justify-center lg:px-24 items-center flex-wrap">
-          <div className="w-full lg:w-6/12    flex justify-center lg:justify-start lg:px-2 md:px-3">
+        <div className="flex h-70vh justify-center lg:justify-start lg:px-24 items-center flex-wrap">
+          <div className="w-full lg:w-4/12    flex justify-center lg:justify-start lg:px-2 md:px-3">
             <div className=" h-[350px] w-[350px]  md:h-[300px] md:w-[300px] services-gradient border-4 border-brand_red overflow-hidden relative">
               <Image
-                className="overflow-hidden object-cover"
+                onError={() => setImg(false)}
+                className={`overflow-hidden object-cover ${!img && "hidden"}`}
                 fill
                 placeholder={"blur"}
                 blurDataURL={"favicon.ico"}
@@ -48,6 +50,14 @@ function Id() {
                 alt="ordinal"
                 src={`https://ordinals.com/content/${data.id}`}
               />
+              <iframe
+                referrerPolicy="no-referrer"
+                sandbox="allow-scripts"
+                className={`overflow-hidden bg-white h-full w-full center ${
+                  img && "hidden"
+                }`}
+                src={`https://ordinals.com/content/${data.id}`}
+              ></iframe>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-6  flex flex-col   h-[300px]">
@@ -59,7 +69,7 @@ function Id() {
             </p>
             <p className="text-white pb-1 flex ">
               ID:{" "}
-              <span className="hidden  text-xs ml-2 truncate text-ellipsis overflow-hidden bg-brand_blue  px-3 py-1 rounded md:flex  items-center space-x-3">
+              <span className="hidden  text-xs ml-2 bg-brand_blue  px-3 py-1 rounded md:flex  items-center space-x-3">
                 {data.id}{" "}
                 <AiOutlineCopy
                   onClick={() =>
@@ -80,7 +90,7 @@ function Id() {
             </p>
             <p className="text-white pb-1 flex ">
               Address:{" "}
-              <span className="text-xs bg-brand_blue ml-2 truncate px-3 py-1 rounded hidden md:flex  items-center space-x-3">
+              <span className="text-xs bg-brand_blue ml-2 px-3 py-1 rounded hidden md:flex  items-center space-x-3">
                 {data.address}{" "}
                 <AiOutlineCopy
                   onClick={() =>
