@@ -9,11 +9,37 @@ function Testimonials() {
     centerPadding: "60px",
     slidesToShow: 1,
     speed: 500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
-    <div className="flex justify-between items-center pr-10 lg:h-screen">
-      <div className="relative w-1/12 h-full flex items-center pr-2">
+    <div className="md:flex md:justify-between items-center md:pr-10 lg:h-screen">
+      <div className="hidden  relative w-1/12 h-full md:flex items-center pr-2">
         <h3 className="transform kallistoBold -rotate-90  text-xl lg:text-4xl font-extrabold text-brand_red  uppercase">
           <span className="text-[8rem] leading-tight absolute top-[-35px] left-[-84px]">
             T
@@ -21,7 +47,15 @@ function Testimonials() {
           estimonials
         </h3>
       </div>
-      <div className="pt-20 lg:px-32  lg:w-10/12 md:w-9/12">
+      <div className="flex  md:hidden">
+      <h3 className=" kallistoBold text-center w-full  text-xl lg:text-4xl font-extrabold text-brand_red  uppercase">
+          <span className=" text-6xl ">
+            T
+          </span>
+          estimonials
+        </h3>
+      </div>
+      <div className=" px-10 lg:px-32 w-full   lg:w-10/12 md:w-9/12">
         <div className="">
           <Slider {...settings}>
             <div className="flex p-6 justify-center h-[400px] items-center">
