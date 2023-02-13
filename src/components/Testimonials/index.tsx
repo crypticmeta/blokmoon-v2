@@ -116,7 +116,7 @@ function Testimonials() {
        style={{ zIndex: 200 }}
        // style={{ ...style }}
        className={
-         "arrows prev absolute top-0 bottom-0 left-0 z-50 flex cursor-pointer w-[100px] flex-col justify-center"
+         "arrows prev absolute top-0 bottom-0 left-0 z-50 flex cursor-pointer w-[150px] flex-col justify-center"
        }
      >
        <svg viewBox="0 0 130 130" className="fill-brand_red">
@@ -174,7 +174,7 @@ function Testimonials() {
        style={{ zIndex: 200 }}
        // style={{ ...style }}
        className={
-         "arrows next absolute top-0 bottom-0 right-0 z-50 flex cursor-pointer w-[100px] flex-col justify-center"
+         "arrows next absolute top-0 bottom-0 right-0 z-50 flex cursor-pointer w-[150px] flex-col justify-center"
        }
      >
        <svg viewBox="0 0 130 130">
