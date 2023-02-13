@@ -5,7 +5,7 @@ function Index() {
     const [id, setId] = useState("");
   return (
     <div className="custom-container center ">
-      <div className="gradient md:w-full flex px-3 rounded-2xl  border-white border-4 items-center">
+      <div className="gradient  md:w-full flex sm:px-6 px-8  md:px-3 rounded-2xl  border-white border-4 items-center">
         <input
           placeholder="enter inscription id"
           value={id}
