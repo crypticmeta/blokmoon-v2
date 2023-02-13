@@ -34,9 +34,9 @@ function Id() {
     
     if(data)
   return (
-    <div className="custom-container h-screen">
+    <div className="custom-container   h-screen">
       <Input/>
-      <div className="flex h-70vh justify-between items-center flex-wrap">
+      <div className="flex h-70vh  justify-between items-center flex-wrap">
         <div className="w-full md:w-6/12 flex justify-end px-3">
           <div className="h-[300px] w-[300px] services-gradient border-4 border-brand_red overflow-hidden relative">
             <Image
