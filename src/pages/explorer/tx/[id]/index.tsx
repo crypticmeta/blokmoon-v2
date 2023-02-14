@@ -21,17 +21,27 @@ function Id() {
   const fetchData = useCallback(async () => {
     setLoadingtrue();
     await axios
-      .get("https://ordapi.xyz/address/" + router.query.id)
-      .then((res) => {
-        if (res.data[0]?.id) {
-          res.data[0].address = router.query.id;
-          setData(res.data[0]);
+      .get("https://ordapi.xyz/tx/" + router.query.id)
+      .then(async (txres) => {
+        if (txres.data?.address) {
+          await axios
+            .get("https://ordapi.xyz/address/" + txres.data?.address)
+            .then((res) => {
+              if (res.data[0]?.id) {
+                res.data[0].address = txres.data?.address;
+                setData(res.data[0]);
+              }
+              setLoadingFalse();
+            })
+            .catch((err) => {
+              setLoadingFalse();
+              console.log(err, "ERR");
+            });
         }
-        setLoadingFalse();
       })
       .catch((err) => {
         setLoadingFalse();
-        console.log(err, "ERR");
+        console.log(err, "TX ERR");
       });
   }, [router.query]);
 
@@ -39,6 +49,7 @@ function Id() {
     if (router.query?.id) fetchData();
   }, [fetchData, router.query]);
 
+  console.log(data, "DATA");
   if (data?.id)
     return (
       <div className="custom-container   h-screen">
@@ -56,7 +67,7 @@ function Id() {
           </div>
         ) : (
           <div className="center text-white text-center text-3xl lg:px-24 items-center flex-wrap">
-            INVALID ADDRESS
+            INVALID TRANSACTION
           </div>
         )}
       </div>
