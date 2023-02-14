@@ -42,11 +42,11 @@ function Services() {
        ],
      };
   return (
-    <div className="min-h-screen center text-white w-full custom-container">
+    <div className="min-h-screen center text-white w-full custom-container overflow-hidden">
       <div className="w-full">
         <Slider {...settings} className="w-full">
           <div className=" w-full flex items-center justify-center   md:w-6/12 p-3 h-[500px] 2xl:h-[1000px] relative">
-            <h3 className="  text-xl lg:text-4xl font-extrabold text-brand_blue absolute bottom-0 uppercase">
+            <h3 className="  text-xl lg:text-4xl font-extrabold absolute bottom-0 uppercase">
               <span className="text-[8rem]">S</span>ervices
             </h3>
           </div>
@@ -192,7 +192,7 @@ function SampleNextArrow(props) {
       style={{ zIndex: 200 }}
       // style={{ ...style }}
       className={
-        "arrows next absolute top-0 bottom-0 right-0   lg:right-[-70px] z-50 flex cursor-pointer w-[150px] flex-col justify-center"
+        "arrows next absolute top-0 bottom-0 right-[-60px]   lg:right-[-70px] z-50 flex cursor-pointer w-[150px] flex-col justify-center"
       }
     >
       <svg viewBox="0 0 130 130" className="fill-brand_blue">

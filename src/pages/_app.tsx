@@ -10,10 +10,10 @@ require('@solana/wallet-adapter-react-ui/styles.css');
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/globals.css";
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Layout/Navbar"
 const App: FC<AppProps> = ({ Component, pageProps }) => {
     return (
-      <div className="relative">
+      <div className="relative ">
         <div
           style={{ zIndex: -1 }}
           className="fixed top-0 bottom-0 right-0 left-0"
@@ -42,13 +42,12 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           />
           <meta name="twitter:image" content="/assets/images/screenHome.png" />
         </Head>
-        <ContextProvider>
-          <div className="relative z-[1]">
-            <Navbar />
-            <Notifications />
-            <Component {...pageProps} />
-          </div>
-        </ContextProvider>
+        {/* <ContextProvider></ContextProvider> */}
+        <div className="relative z-[1] bg-blue-00 ">
+          <Navbar />
+          <Notifications />
+          <Component {...pageProps} />
+        </div>
       </div>
     );
 };
