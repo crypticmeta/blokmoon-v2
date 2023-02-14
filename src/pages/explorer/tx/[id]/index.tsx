@@ -38,6 +38,8 @@ function Id() {
               console.log(err, "ERR");
             });
         }
+        setLoadingFalse();
+        
       })
       .catch((err) => {
         setLoadingFalse();
