@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import axios from 'axios'
 import Image from "next/image"
 import Link from "next/link"
-import Input from "../../components/Input"
+import Input from "../../components/Explorer/Input"
 import Head from "next/head"
 function Explorer() {
     const [data, setData] = useState([]);
