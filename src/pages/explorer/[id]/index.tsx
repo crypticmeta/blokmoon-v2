@@ -39,7 +39,7 @@ function Id() {
         <Input />
         <div className="flex h-70vh justify-center lg:justify-start lg:px-24 items-center flex-wrap">
           <div className="w-full lg:w-4/12    flex justify-center lg:justify-start lg:px-2 md:px-3">
-            <div className=" h-[350px] w-[350px]  md:h-[300px] md:w-[300px] services-gradient border-4 border-brand_red overflow-hidden relative">
+            <div className=" h-[350px] w-[350px] lg:w-[400px] lg:h-[400px] md:h-[300px]   md:w-[300px] services-gradient border-4 border-brand_red overflow-hidden relative">
               <Image
                 unoptimized
                 onError={() => setImg(false)}
@@ -53,7 +53,7 @@ function Id() {
               />
               <iframe
                 referrerPolicy="no-referrer"
-                sandbox="allow-scripts"
+                // sandbox="allow-scripts"
                 className={`overflow-hidden bg-white h-full w-full center ${
                   img && "hidden"
                 }`}
