@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { AiOutlineCopy } from 'react-icons/ai';
 import copy from 'copy-to-clipboard';
 import { shortForm } from 'utils/shortForm';
+import { BsDownload } from "react-icons/bs";
+import { saveAs } from "file-saver";
 interface OrdinalProp {
   data: {
     title: string;
@@ -16,13 +18,21 @@ interface OrdinalProp {
 };
 
 function Ordinal({data}:OrdinalProp):JSX.Element {
-     const [img, setImg] = useState(true);
+  const [img, setImg] = useState(true);
+   const handleSave = () => {
+     const url = `https://ordinals.com/content/${data.id}`;
+     saveAs(url, data.title);
+   };
   return (
     <div className="custom-container   h-screen">
       <Input />
       <div className="flex h-70vh justify-center lg:justify-start lg:px-24 items-center flex-wrap">
         <div className="w-full lg:w-4/12    flex justify-center lg:justify-start lg:px-2 md:px-3">
           <div className=" h-[350px] w-[350px] lg:w-[400px] lg:h-[400px] md:h-[300px]   md:w-[300px] services-gradient border-4 border-brand_red overflow-hidden relative">
+            <BsDownload
+              onClick={handleSave}
+              className="absolute top-5 right-5 z-10 invert text-xl font-extrabold"
+            />
             <Image
               unoptimized
               onError={() => setImg(false)}
@@ -44,7 +54,7 @@ function Ordinal({data}:OrdinalProp):JSX.Element {
             ></iframe>
           </div>
         </div>
-        <div className="w-full lg:w-6/12 px-6  flex flex-col   h-[300px]">
+        <div className="w-full lg:w-6/12 lg:px-6  flex flex-col pt-6 lg:pt-0  h-[300px]">
           <p className="text-3xl text-brand_red font-extrabold uppercase">
             {data.title}
           </p>
@@ -111,3 +121,4 @@ function Ordinal({data}:OrdinalProp):JSX.Element {
 }
 
 export default Ordinal
+
