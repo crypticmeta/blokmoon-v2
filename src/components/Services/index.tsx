@@ -45,7 +45,7 @@ function Services() {
     <div className="min-h-screen center text-white w-full custom-container">
       <div className="w-full">
         <Slider {...settings} className="w-full">
-          <div className=" w-full flex items-center justify-center bg-red-500  md:w-6/12 p-3 h-[500px] 2xl:h-[1000px] relative">
+          <div className=" w-full flex items-center justify-center   md:w-6/12 p-3 h-[500px] 2xl:h-[1000px] relative">
             <h3 className="  text-xl lg:text-4xl font-extrabold text-brand_blue absolute bottom-0 uppercase">
               <span className="text-[8rem]">S</span>ervices
             </h3>
