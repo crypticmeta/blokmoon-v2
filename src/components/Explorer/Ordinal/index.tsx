@@ -33,10 +33,8 @@ function Ordinal({ data }: OrdinalProp): JSX.Element {
           name="description"
           content={`Blokmoon BTC NFT explorer aims to help you search details related to your NFTs easily and in a readable format. This NFT is ${data.title} and has the ID ${data.id}`}
         />
-        <meta
-          property="og:image"
-          content={`https://ordinals.com/content/${data.id}`}
-        />
+        <meta property="og:image" content="/assets/images/screen.png" />
+        <meta property="og:title" content={`Blokmoon | ${data.title}`} />
 
         {/* <!-- Twitter cards --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -46,10 +44,7 @@ function Ordinal({ data }: OrdinalProp): JSX.Element {
           name="twitter:description"
           content={`Blokmoon BTC NFT explorer aims to help you search details related to your NFTs easily and in a readable format. This NFT is ${data.title} and has the ID ${data.id}`}
         />
-        <meta
-          name="twitter:image"
-          content={`https://ordinals.com/content/${data.id}`}
-        />
+        <meta name="twitter:image" content="/assets/images/screen.png" />
       </Head>
       <div className="w-full lg:w-5/12    flex justify-center lg:justify-start">
         <div className=" h-[350px] w-[350px] lg:w-[400px] lg:h-[400px] md:h-[300px]   md:w-[300px] services-gradient border-4 border-brand_red overflow-hidden relative">
