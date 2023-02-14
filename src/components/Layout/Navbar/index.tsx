@@ -33,7 +33,7 @@ function Navbar() {
 
 
   return (
-    <div className="text-white  md:px-12 flex justify-between w-full custom-container text-3xl">
+    <div className="text-white flex justify-between w-full custom-container text-3xl">
       <div>
         <Link href="/">
           <AiFillHome />

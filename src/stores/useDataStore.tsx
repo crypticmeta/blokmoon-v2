@@ -1,17 +1,16 @@
 import create, { State } from "zustand";
-
+import { devtools } from "zustand/middleware";
 interface DataStore extends State {
+  setLoadingTrue: any;
+  setLoadingFalse: any;
   loading: boolean;
 }
 
-const useDataStore = create<DataStore>((set, _get) => ({
+const dataStore =((set, _get) => ({
   loading: false,
-//     getLoading: async () => {
-//         loading
-//     set((s) => {
-//       s.loading = loading
-//     });
-//   },
+  setLoadingTrue: () => set({ loading: true }),
+  setLoadingFalse: () => set({ loading: false }),
 }));
 
+const useDataStore = create(devtools(dataStore));
 export default useDataStore;

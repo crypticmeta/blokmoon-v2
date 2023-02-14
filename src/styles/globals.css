@@ -5,6 +5,17 @@
 *{
   font-family: 'KallistoBold'; 
 }
+iframe {
+  overflow: hidden;
+    overflow-clip-margin: content-box !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    overflow: clip !important;
+    aspect-ratio: 1 / 1;
+    border: none;
+}
 
 .services-gradient{
 background: rgb(6,46,57);

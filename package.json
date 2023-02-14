@@ -11,7 +11,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@heroicons/react": "^1.0.5",
+    "@mui/material": "^5.11.8",
     "@noble/ed25519": "^1.7.1",
     "@rive-app/react-canvas": "^3.0.35",
     "@solana/wallet-adapter-base": "^0.9.20",
