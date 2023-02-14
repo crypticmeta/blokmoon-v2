@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import Head from 'next/head'
 import Input from "../../../components/Explorer/Input";
 import Ordinal from "components/Explorer/Ordinal";
 import useDataStore from "stores/useDataStore";
@@ -38,7 +39,7 @@ function Id() {
 
   if (!data) {
     return (
-      <div className="custom-container   h-screen">
+      <div className="custom-container   h-screen">        
         <Input />
         {loading ? (
           <div className="text-brand_red h-50vh center">
