@@ -41,7 +41,7 @@ function Testimonials() {
   };
 
   return (
-    <div className="md:flex md:justify-between items-center md:pr-10 lg:h-screen">
+    <div className=" py-14 lg:py-0 md:flex md:justify-between items-center md:pr-10 lg:h-screen overflow-hidden">
       <div className="hidden  relative w-1/12 h-full md:flex items-center pr-2">
         <h3 className="transform kallistoBold -rotate-90  text-xl lg:text-4xl font-extrabold text-brand_red  uppercase">
           <span className="text-[8rem] leading-tight absolute top-[-35px] left-[-84px]">
@@ -116,7 +116,7 @@ function Testimonials() {
        style={{ zIndex: 200 }}
        // style={{ ...style }}
        className={
-         "arrows prev absolute top-0 bottom-0 left-0 z-50 flex cursor-pointer w-[150px] flex-col justify-center"
+         "arrows prev absolute top-0 bottom-0 left-[-40px] lg:left-0 z-50 flex cursor-pointer w-[150px] flex-col justify-center"
        }
      >
        <svg viewBox="0 0 130 130" className="fill-brand_red">
@@ -174,7 +174,7 @@ function Testimonials() {
        style={{ zIndex: 200 }}
        // style={{ ...style }}
        className={
-         "arrows next absolute top-0 bottom-0 right-0 z-50 flex cursor-pointer w-[150px] flex-col justify-center"
+         "arrows next absolute top-0 bottom-0 right-[-40px] lg:right-0 z-50 flex cursor-pointer w-[150px] flex-col justify-center"
        }
      >
        <svg viewBox="0 0 130 130">
