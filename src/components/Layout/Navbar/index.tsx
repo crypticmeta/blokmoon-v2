@@ -33,27 +33,27 @@ function Navbar() {
 
 
   return (
-    <div className="text-white flex justify-between w-full custom-container text-3xl">
-      <div>
+    <div className="text-white flex justify-between w-full items-center custom-container text-3xl">
+      <div className='w-3/12 flex justify-start items-center'>
         <Link href="/">
-          <AiFillHome />
+          <img src="/assets/images/long_logo.png"/>
         </Link>
       </div>
 
-      <div className='flex items-center space-x-3'>
+      <div className='flex items-center space-x-3 w-6/12 justify-center'>
         <a href="https://discord.gg/UCgMuJ3uGx" target={"_blank"} rel="noreferrer" className='pt-2'>
           <FaDiscord />
         </a>
         <div>
-          <Link
-            href="/explorer"
+          <a
+            href="https://ordscan.xyz"
             className="text-base tracking-wider rounded-xl uppercase gradient px-3 py-1"
           >
             Explorer
-          </Link>
+          </a>
         </div>
       </div>
-      <div className="text-3xl text-white ">
+      <div className="text-3xl text-white w-3/12 flex justify-end">
             <div className="cursor-pointer">
               <AiOutlineMenu onClick={() => setOpen(!open)} />
             </div>
