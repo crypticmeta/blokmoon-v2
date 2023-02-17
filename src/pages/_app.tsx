@@ -10,10 +10,12 @@ require('@solana/wallet-adapter-react-ui/styles.css');
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "../components/Layout/Navbar"
 const App: FC<AppProps> = ({ Component, pageProps }) => {
     return (
       <div className="relative ">
+        <Analytics />
         <div
           style={{ zIndex: -1 }}
           className="fixed top-0 bottom-0 right-0 left-0"

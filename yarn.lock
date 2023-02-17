@@ -1624,6 +1624,11 @@
   dependencies:
     uuid "^3.0.1"
 
+"@vercel/analytics@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-0.1.9.tgz#434f14a0dbe635a6d92c693a3607dbac0468dd47"
+  integrity sha512-Lfus/6HAZXQBr4uv5eCtNKrEvthKWQFFcUNh5wC3fWn+4PbHxT8bqcm1TMQfYvGJ8O4TWzn0IfrQFNWh1DHDbQ==
+
 "@wallet-standard/app@^1.0.0":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@wallet-standard/app/-/app-1.0.1.tgz"

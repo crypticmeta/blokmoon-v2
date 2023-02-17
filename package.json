@@ -24,6 +24,7 @@
     "@solana/web3.js": "^1.73.0",
     "@tailwindcss/typography": "^0.5.9",
     "@types/file-saver": "^2.0.5",
+    "@vercel/analytics": "^0.1.9",
     "bitcoin-core": "^4.1.0",
     "copy-to-clipboard": "^3.3.3",
     "daisyui": "^1.24.3",
